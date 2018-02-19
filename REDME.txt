@@ -1,0 +1,10 @@
+This web-app was created by Aliaksei Zayats (Poland, Cracov) 2018-02-19
+
+There you can find some technologies like:
+
+-Spring MVC (using xml and annotations)
+-Hibernate
+-connecting to MySQL database
+-web-application Maven
+-.jsp page with connecting .js file from specific folder for this kind of files: resources/js/
+-in core of project you can find script_test.sql file for autofilling your MySQL database with name "test" and login/password "root"
