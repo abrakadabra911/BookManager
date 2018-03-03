@@ -150,6 +150,7 @@
 
     <build>
         <finalName>BookManger</finalName>
+        <defaultGoal>package</defaultGoal>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -158,14 +159,14 @@
                     <target>1.6</target>
                 </configuration>
             </plugin>
-            <plugin>
+        <!--    <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <includes>
                         <include>**/*Tests.java</include>
                     </includes>
                 </configuration>
-            </plugin>
+            </plugin>-->
             <plugin>                                     <!--tomcat7 plugin is not necessary-->
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>

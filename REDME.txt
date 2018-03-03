@@ -1,4 +1,4 @@
-This web-app was created by Aliaksei Zayats (Poland, Cracov) 2018-02-19
+This CRUD web-app was created by Aliaksei Zayats (Poland, Cracov) 2018-02-19
 
 There you can find some technologies like:
 
@@ -7,4 +7,18 @@ There you can find some technologies like:
 -connecting to MySQL database
 -web-application Maven
 -.jsp page with connecting .js file from specific folder for this kind of files: resources/js/
--in core of project you can find script_test.sql file for autofilling your MySQL database with name "test" and login/password "root"
+-in core of project you can find script_test.sql file for autofilling your MySQL database
+ named "test" with login/password "root"
+
+
+This application is a bookManager, where you can:
+- see paging table of all books from MySQL database
+- add a book
+- edit a book
+- change a status to "read"
+- delete a book
+- search a book by author or title
+
+
+If you are not able to deploy and overlook the app (Tomcat + MySQL),
+you can find some screenshots in 'screenshots' folder
