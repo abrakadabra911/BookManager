@@ -58,7 +58,6 @@ public class BookDaoImpl implements BookDao {
     public Book getBookById(int id) {
         Session session = this.sessionFactory.getCurrentSession();
         Book book = (Book) session.load(Book.class, new Integer(id)); // for loading book from DB
-
         if (book != null) {
             logger.info("Book successfully loaded. Book details: " + book);
             return book;
@@ -71,8 +70,7 @@ public class BookDaoImpl implements BookDao {
     @SuppressWarnings("unchecked")
     public List<Book> listBooks() {
         Session session = this.sessionFactory.getCurrentSession();
-        List<Book> bookList = session.createQuery("from Book").list(); // special query for loading all objects Book.class
-
+        List<Book> bookList = session.createQuery("from Book").list(); // query for loading all objects Book.class
         for(Book book: bookList) {
             logger.info("Book list: " + book);
         }
@@ -84,7 +82,6 @@ public class BookDaoImpl implements BookDao {
     public List<Book> listBooksFiltered(String title, String author) {
         Session session = this.sessionFactory.getCurrentSession();
         Query query = session.createQuery("from Book");
-
         if(title.isEmpty() && !author.isEmpty()) {
             query = session.createQuery("from Book where bookAuthor = :paramAuthor");
             query.setParameter("paramAuthor", author);
@@ -98,9 +95,7 @@ public class BookDaoImpl implements BookDao {
             query.setParameter("paramTitle", title);
             query.setParameter("paramAuthor", author);
         }
-
         List<Book> bookList = query.list();
-
         for(Book book: bookList) {
             logger.info("Book list: " + book);
         }

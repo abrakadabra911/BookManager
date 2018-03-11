@@ -4,7 +4,7 @@
     <title>Book Manager</title>
 </head>
 <body>
-<h3>Book Manager</h3>
+<h3>Book Manager, made by Aliaksei Zayats 2018</h3>
 <br/>
 <a href="/books">Click to open Books list</a>
 <br/>
